@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Water's Edge Oaks RV Park</title>
+    
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <header></header>
+    <div class="container"></div>
+    <!--<article id="weather" class="tile">Weather</article>-->
+    <!--<section id="sports-container">-->
+    <!--  <article id="fishing" class="tile">Fishing</article>-->
+    <!--  <article id="hunting" class="tile">Hunting</article>-->
+    <!--</section>-->
+    <!--<article id="rates" class="tile">Rates</article>-->
+    <!--<article id="about_us" class="tile">About Us</article>-->
+    <!--<article id="contact_us" class="tile">Contact Us</article>-->
+    
+    <script src="js/lib/jquery_2-1-4.js"></script>
+    <script src="js/lib/underscore_1-8-3.js"></script>
+    <script src="js/lib/backbone_1-2-1.js"></script>
+    <script>
+      (function() {
+        var WEO = {
+          Models: {},
+          Collections: {},
+          Views: {},
+          Controllers: {},
+          Routers: {},
+          Templates: {}
+        };
+}) ();
+    </script>
+    <!--<script src="js/main.js"></script>-->
+    <script src="js/routers/mainRouter.js"></script>
+    <script src="js/models/tile.js"></script>
+    <script src="js/collections/tiles.js"></script>
+    <script src="js/views/tileView.js"></script>
+    <script>
+      Backbone.history.start();
+    </script>
+  </body>
+</html>

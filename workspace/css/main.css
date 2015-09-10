@@ -1,0 +1,52 @@
+body {
+  display: flex;
+}
+
+article {
+  border: 1px solid red;
+  height: 40px;
+  width: 40px;
+}
+
+div {
+  border: 1px solid black;
+}
+
+.tile {
+  height: 65px;
+  width: 100%;
+}
+
+/*
+  start TILES
+*/
+
+#fishing {
+  background: red;
+  order: 1;
+}
+
+#hunting {
+  background: yellow;
+  order: -1;
+}
+
+#weather {
+  background: orange; 
+  order: 2;
+}
+
+#rates {
+  background: green;
+  order: 4;
+}
+
+#about_us {
+  background: blue;
+  order: 3;
+}
+
+#contact_us {
+  background: purple;
+  order: 5;
+}
