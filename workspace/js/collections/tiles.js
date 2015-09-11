@@ -2,6 +2,7 @@ WEO.Collections.Tiles = new Backbone.Collection.extend( {
     model: WEO.Models.Tile,
     
     initialize: function() {
+      console.log(++globalCount+"  4");
       this.models.add([
         {id: "Fishing"},
         {id: "Hunting"},

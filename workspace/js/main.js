@@ -1,10 +1,15 @@
+var WEO = WEO || {};
 (function() {
-    var WEO = {
-        Models: {},
-        Collections: {},
-        Views: {},
-        Controllers: {},
-        Routers: {},
-        Templates: {}
-    };
+  globalCount = 0;
+  WEO = {
+    Models: {},
+    Collections: {},
+    Views: {},
+    Controllers: {},
+    Routers: {},
+    Templates: {}
+  };
+
+  console.log(++globalCount+"  1");
+  
 }) ();
