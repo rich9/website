@@ -4,13 +4,25 @@ WEO.Routers.App = Backbone.Router.extend({
       "" : "home"    
     },
     
-    Tiles: WEO.Collections.Tiles,
-    
-    home : function () {
+    home : function() {
       // alert();
       console.log(++globalCount +"  3");
-      this.Tiles = new WEO.Collections.Tiles(); //localize reference for perf
+      this.Tile = new WEO.Models.Tile();
+      this.Tiles = new WEO.Collections.Tiles({model: this.Tile}); //localize reference for perf
+      
       console.log(++globalCount +"  5");
       this.TilesView = new WEO.Views.Tiles({collection: this.Tiles});
+    },
+    
+    getTiles : function() {
+      return Tiles;
     }
 });
+
+
+      (function () {
+        // alert();
+        console.log(++globalCount+"  2");
+        new WEO.Routers.App();
+        Backbone.history.start();
+      }) ();

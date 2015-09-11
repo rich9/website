@@ -1,5 +1,5 @@
-var WEO = WEO || {};
 (function() {
+  
   globalCount = 0;
   WEO = {
     Models: {},

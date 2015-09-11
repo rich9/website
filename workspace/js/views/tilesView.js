@@ -6,6 +6,7 @@ WEO.Views.Tiles = Backbone.View.extend({
     template: _.template(this.collection.toJSON()),
     
     initialize: function() {
+      console.log(++globalCount+"  6");
       this.listenTo(this.collection, "reset", this.render()); 
     },
     
