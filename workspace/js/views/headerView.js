@@ -1,3 +1,4 @@
+/*global WEO, Backbone, globalCount*/
 WEO.Views.Header = Backbone.View.extend({
    tagname: "header",
    

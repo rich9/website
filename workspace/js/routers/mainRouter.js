@@ -1,6 +1,7 @@
+/*global WEO, Backbone, globalCount*/
 WEO.Routers.App = Backbone.Router.extend({
     
-    routes: {
+    routes : {
       "" : "home"    
     },
     
@@ -8,14 +9,22 @@ WEO.Routers.App = Backbone.Router.extend({
       // alert();
       console.log(++globalCount +"  3");
       this.Tile = new WEO.Models.Tile();
-      this.Tiles = new WEO.Collections.Tiles({model: this.Tile}); //localize reference for perf
-      
+      this.Tiles = new WEO.Collections.Tiles(
+        [{id: "Fishing"},
+        {id: "Hunting"},
+        {id: "Ammenities"},
+        {id: "Attractions"},
+        {id: "ParkInfo"},
+        {id: "Comments"}]
+      );
       console.log(++globalCount +"  5");
+      console.log(WEO.Views);
       this.TilesView = new WEO.Views.Tiles({collection: this.Tiles});
+      $(".container").html(this.TilesView.el);
     },
     
     getTiles : function() {
-      return Tiles;
+      return this.Tiles;
     }
 });
 

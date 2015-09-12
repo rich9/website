@@ -1,3 +1,4 @@
+/*global WEO, Backbone, globalCount*/
 WEO.Views.Page = Backbone.View.extend({
    tagName: "div",
    model: WEO.Models.Page,

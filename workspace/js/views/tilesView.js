@@ -1,12 +1,13 @@
+/*global WEO, Backbone, _, globalCount*/
 WEO.Views.Tiles = Backbone.View.extend({
     collection: WEO.Collections.Tiles,
     
-    tagname: "div",
+    tagName: "div",
     
-    template: _.template(this.collection.toJSON()),
+    template: _.template("Hello World!"),
     
-    initialize: function() {
-      console.log(++globalCount+"  6");
+    initialize: function() {      
+      console.log(++globalCount +"  6");
       this.listenTo(this.collection, "reset", this.render()); 
     },
     

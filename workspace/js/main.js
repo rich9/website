@@ -1,6 +1,9 @@
+/*global WEO, Backbone, globalCount*/
 (function() {
   
   globalCount = 0;
+  
+  //create global variable `WEO` for namespacing
   WEO = {
     Models: {},
     Collections: {},

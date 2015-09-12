@@ -1,3 +1,4 @@
+/*global WEO, Backbone, _, globalCount*/
 WEO.Views.Tile = Backbone.View.extend({
     tagname: "article",
     model: WEO.Models.Tile,

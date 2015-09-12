@@ -1,15 +1,9 @@
-WEO.Collections.Tiles = new Backbone.Collection.extend( {
+/*global WEO, Backbone, globalCount*/
+WEO.Collections.Tiles = Backbone.Collection.extend( {
     model: WEO.Models.Tile,
     
     initialize: function() {
       console.log(++globalCount+"  4");
-      this.models.add([
-        {id: "Fishing"},
-        {id: "Hunting"},
-        {id: "Ammenities"},
-        {id: "Attractions"},
-        {id: "ParkInfo"},
-        {id: "Comments"}
-      ]);
     },
+
 });
